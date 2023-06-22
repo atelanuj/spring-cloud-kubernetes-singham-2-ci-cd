@@ -16,7 +16,7 @@
 # You should also add the following to your managed or unmanaged nodegroup definition(s) to add the tags required for the Cluster Autoscaler to scale the nodegroup:
 
 ---
-apiVersion: eks/v1beta1   #eksctl.io/v1alpha5
+apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata: 
     name: my-eks-cluster
@@ -25,7 +25,7 @@ nodeGroups:
   - name: eksNodeGroup
     desiredCapacity: 2
     # amiType: managed  #instance
-    kubernetesVersion: "1.24"
+    version: "1.25"
     instanceType: t2.micro
     # vpcSubnets:               #for eks creation inside a custom VPC
     # - subnet-12345678
