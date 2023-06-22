@@ -124,7 +124,7 @@ pipeline {
 				expression { params.action == 'create' }
 			}
             steps{
-                sh 'sleep 300'
+                sh 'sleep 100'
             }
         }
 
