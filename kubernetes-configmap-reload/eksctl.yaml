@@ -24,7 +24,7 @@ metadata:
 nodeGroups:
   - name: eksNodeGroup
     desiredCapacity: 2
-    amiType: managed  #instance
+    # amiType: managed  #instance
     kubernetesVersion: "1.24"
     instanceType: t2.micro
     # vpcSubnets:               #for eks creation inside a custom VPC
