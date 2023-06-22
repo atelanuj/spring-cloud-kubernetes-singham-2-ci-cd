@@ -16,7 +16,7 @@
 # You should also add the following to your managed or unmanaged nodegroup definition(s) to add the tags required for the Cluster Autoscaler to scale the nodegroup:
 
 ---
-apiVersion: eksctl.io/v1alpha5
+apiVersion: eks/v1beta1   #eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata: 
     name: my-eks-cluster
